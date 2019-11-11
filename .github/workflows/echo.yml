@@ -34,8 +34,8 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           REF: ${{ github.ref }}
-          HUBOT: ${{ format('Hello {0} {1} {2} {3}', 'Hubot', 'the', 'friendly', 'robot') }}
+          HUBOT: ${{ format('Hello {0} {1} {2} {3}', 'Hubot', 'the', 'friendly', 'robot :wave:') }}
         run: |
           echo "Event name $EVENT_NAME and ref $REF"
-          echo "${HUBOT/Hubot/Probot} :wave:"
+          echo "${HUBOT/Hubot/Probot}"
         
