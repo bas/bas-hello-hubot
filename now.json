@@ -7,7 +7,7 @@
             "use": "@now/node"
         },
         {
-            "src": "images",
+            "src": "images/hubot.jpg",
             "use": "@now/static"
         }
     ]
