@@ -1,7 +1,9 @@
+name: Echo environment variables
+
 on: push
 
 jobs:
-  one:
+  echo:
     runs-on: ubuntu-16.04
     steps:
       - name: Dump GitHub context
