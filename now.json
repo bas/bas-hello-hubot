@@ -3,11 +3,11 @@
     "name": "hello-hubot",
     "builds": [
         {
-            "src": "**/*.js",
+            "src": "index.js",
             "use": "@now/node"
         },
         {
-            "src": "**/*.jpg",
+            "src": "images",
             "use": "@now/static"
         }
     ]
