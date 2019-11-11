@@ -3,18 +3,12 @@
     "name": "hello-hubot",
     "builds": [
         {
-            "src": "app.js",
-            "use": "@now/node-server"
+            "src": "**/*.js",
+            "use": "@now/node"
         },
         {
-            "src":"assets/**/*",
-            "use":"@now/static"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "app.js"
+            "src": "assets/images/**/*",
+            "use": "@now/static"
         }
     ]
 }
