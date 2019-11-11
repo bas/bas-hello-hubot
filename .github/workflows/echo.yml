@@ -30,9 +30,11 @@ jobs:
         env:
           MATRIX_CONTEXT: ${{ toJson(matrix) }}
         run: echo "$MATRIX_CONTEXT"
-      - run |
-          echo 'Event name $EVENT_NAME'
-          echo 'GitHub ref $REF'
+      - name: Outputs 
         env:
           EVENT_NAME: ${{ github.event_name }}
           REF: ${{ github.ref }}
+        run: |
+          echo 'Event name $EVENT_NAME'
+          echo 'GitHub ref $REF'
+        
