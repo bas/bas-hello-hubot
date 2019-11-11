@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "name": "hello-hubot",
+    "builds": [
+        {
+            "src": "**/*.js",
+            "use": "@now/node"
+        },
+        {
+            "src": "img/**/*",
+            "use": "@now/static"
+        }
+    ]
+}

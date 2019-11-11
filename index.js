@@ -1,14 +1,10 @@
 var express = require('express')
 var app = express()
 
-app.use(express.static('assets'));
+//app.use(express.static('assets'));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + "/" + "index.html");
-})
-
-app.get('/about', function (req, res) {
-    res.send('About page. Nice.')
 })
 
 //Launch listening server on port 8080
