@@ -5,17 +5,17 @@ on: [push]
 jobs:
   build:
     env:
-      node-version: 12.x
+      NODE_VERSION: 12.x
     
     runs-on: ubuntu-latest
     
 
     steps:
     - uses: actions/checkout@v1
-    - name: Use Node.js ${env.node-version}
+    - name: Use Node.js ${{ env.NODE_VERSION }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${env.node-version}
+        node-version: ${{ env.NODE_VERSION }}
     - name: npm install, build, and test
       run: |
         npm ci
