@@ -37,5 +37,5 @@ jobs:
           HUBOT: ${{ format('Hello {0} {1} {2} {3}', 'Hubot', 'the', 'friendly', 'robot') }}
         run: |
           echo "Event name $EVENT_NAME and ref $REF"
-          echo "$HUBOT"
+          echo "${HUBOT/Hubot/Probot} :wave:"
         
