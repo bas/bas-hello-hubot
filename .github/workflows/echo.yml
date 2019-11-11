@@ -34,7 +34,5 @@ jobs:
         env:
           EVENT_NAME: ${{ github.event_name }}
           REF: ${{ github.ref }}
-        run: |
-          echo 'Event name ${EVENT_NAME}'
-          echo 'GitHub ref ${REF}'
+        run: echo "Event name $EVENT_NAME and ref $REF"
         
